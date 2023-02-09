@@ -27,12 +27,12 @@ export default class ScoreList {
   }
 }
 
-// // Input Form
-// const scoreList = new ScoreList();
+// Input Form
+const scoreList = new ScoreList();
 
-// const inputForm = document.querySelector('.score-form');
-// inputForm.addEventListener('submit', (event) => {
-//   event.preventDefault();
-//   scoreList.addScore();
-//   scoreList.showScores();
-// });
+const inputForm = document.querySelector('.score-form');
+inputForm.addEventListener('submit', (event) => {
+  event.preventDefault();
+  scoreList.addScore();
+  scoreList.showScores();
+});
