@@ -9,7 +9,7 @@ module.exports = {
   entry: './src/index.js',
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
   ],
   module: {
@@ -19,7 +19,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
-  },  
+  },
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),

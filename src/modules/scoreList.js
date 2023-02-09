@@ -18,7 +18,7 @@ export default class ScoreList {
   showScores() {
     const scoreBoard = document.getElementById('scoreboard');
     scoreBoard.classList.toggle('show', this.scoreBoard.length > 0);
-    
+
     this.scoreList.forEach((entry) => {
       const li = document.createElement('li');
       li.innerHTML = entry;

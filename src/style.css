@@ -11,10 +11,6 @@ main {
   margin-left: 5rem;
 }
 
-.score-input {
-  flex: 50%;
-}
-
 .scores-title {
   display: flex;
   justify-content: space-between;
@@ -31,6 +27,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex: 50%;
 }
 
 form {
