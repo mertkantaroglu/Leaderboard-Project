@@ -1,7 +1,46 @@
-.hello {
-    color: red;
-  }
+h1 {
+  margin-left: 3rem;
+}
 
-body {
-    background-color: bisque;
+main {
+  display: flex;
+}
+
+.leaderboard {
+  flex: 50%;
+  margin-left: 5rem;
+}
+
+.score-input {
+  flex: 50%;
+}
+
+.scores-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+ul {
+  border: 2px solid black;
+  width: 60%;
+}
+
+.score-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+form button {
+  display: flex;
+  align-self: flex-end;
 }

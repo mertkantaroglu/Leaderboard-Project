@@ -6,15 +6,23 @@
     <title>Leaderboard</title>
 <script defer src="main.js"></script></head>
 <body>
+  <h1>Leaderboard</h1>
+  <main>
     <div class="leaderboard">
-        <h1>Leaderboard</h1>
-        <div><p>Recent scores</p><button type="submit">Refresh</button></div>
-        <ul id="scoreboard"></ul>
+      <div class="scores-title">
+          <h3>Recent scores</h2>
+          <button type="submit" class="refresh-btn">Refresh</button>
+      </div>
+      <ul id="scoreboard"></ul>
     </div>  
-    <form class="score-input">
+    <div class="score-input">
+      <h3>Add your score</h3>
+      <form class="score-form">
         <input type="text" id="name" placeholder="Your name">
         <input type="text" id="score" placeholder="Your score">
-        <button type="submit">Submit</button>
-    </form>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
