@@ -10,24 +10,27 @@ export const fetchScore = async () => {
   return getScore.result;
 };
 
-const listContainer = document.querySelector('.score-list');
+const listContainer = document.querySelector('.names-score-list-container');
 
 // Show Scores
 export const showScore = async () => {
   const data = await fetchScore();
   data.sort((a, b) => b.score - a.score);
   listContainer.innerHTML = '';
-  const tableData = data.map((item) => `<tr> <td id="table-user">${item.user}</td> <td id="table-score">${item.score}</td> </tr>`);
-  listContainer.innerHTML = `<table><tbody>${tableData.join('')}</tbody></table>`;
+  const listItems = data.map((item) => `<tr> 
+      <td id="table-user">${item.user}</td> 
+      <td id="table-score">${item.score}</td> 
+    </tr>`);
+  listContainer.innerHTML = `<table><tbody>${listItems.join('')}</tbody></table>`;
 };
 
 // Form Submit
 const nameInput = document.querySelector('#name');
 const scoreInput = document.querySelector('#score');
-const formSubmitBtn = document.querySelector('#submit-btn');
+const formSubmitButton = document.querySelector('#form-submit-btn');
 
 export const formSubmit = () => {
-  formSubmitBtn.addEventListener('click', (event) => {
+  formSubmitButton.addEventListener('click', (event) => {
     event.preventDefault();
     postScore();
     nameInput.value = '';
