@@ -27,10 +27,6 @@ main {
   display: flex;
 }
 
-h3 {
-  margin-right: 2rem;
-}
-
 table {
   margin-top: 1rem;
   width: 100%;
@@ -78,6 +74,7 @@ input {
 
 h3 {
   font-size: 2rem;
+  margin-right: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -102,7 +99,7 @@ h3 {
 }
 
 @media (max-width: 400px) {
-h1 {
+  h1 {
     font-size: 2rem;
   }
 }

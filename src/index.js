@@ -8,4 +8,3 @@ window.addEventListener('load', () => {
   formSubmit();
   refreshList();
 });
-
