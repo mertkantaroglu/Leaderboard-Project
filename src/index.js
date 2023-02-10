@@ -1,4 +1,10 @@
 import './style.css';
-import ScoreList from './modules/scoreList.js';
+import { addScore } from './modules/addScore.js';
+import { showScore, formSubmit, refreshList } from './modules/showScore.js';
 
-ScoreList();
+window.addEventListener('load', () => {
+  showScore();
+  addScore();
+  formSubmit();
+  refreshList();
+});

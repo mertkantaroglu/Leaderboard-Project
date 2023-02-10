@@ -1,43 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100vh;
+}
+
 h1 {
-  margin-left: 3rem;
+  padding: 2rem;
+  font-size: 3rem;
+  color: rgb(33, 32, 33);
 }
 
 main {
   display: flex;
-}
-
-.leaderboard {
-  flex: 50%;
-  margin-left: 5rem;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 .scores-title {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 60%;
 }
 
-ul {
-  border: 2px solid black;
-  width: 60%;
+table {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
-.score-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 50%;
+tr {
+  border: 2px solid rgb(201, 194, 202);
+  padding: 0.2rem;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(221, 221, 221);
 }
 
 form {
+  margin-top: 1rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
-form button {
-  display: flex;
-  align-self: flex-end;
+input,
+button {
+  padding: 0.5rem;
+  border: 2px solid rgb(201, 194, 202);
+}
+
+button {
+  background-color: rgb(255, 254, 255);
+  cursor: pointer;
+  transition: 800ms ease-in-out;
+  border-radius: 4px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+input {
+  outline: none;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  table {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .scores-title {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .score-input {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
