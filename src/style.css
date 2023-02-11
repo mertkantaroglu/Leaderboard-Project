@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(44 197 203 / 19%);
   width: 100%;
   height: 100vh;
 }
@@ -13,7 +13,10 @@ body {
 h1 {
   padding: 2rem;
   font-size: 3rem;
-  color: rgb(33, 32, 33);
+  color: rgb(11 125 244);
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  font-style: italic;
 }
 
 main {
@@ -23,24 +26,54 @@ main {
   padding: 2rem;
 }
 
+.leaderboard {
+  min-width: 25rem;
+}
+
 .scores-title {
   display: flex;
+  gap: 7rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(11 125 244);
+  text-shadow: 1px 2px 2px #000;
+  font-style: italic;
+}
+
+.scores-title h3 {
+  margin-left: 1rem;
+  color: rgb(11 125 244);
 }
 
 table {
   margin-top: 1rem;
   width: 100%;
-  border-radius: 5px;
-  border: 1px solid black;
+  border-radius: 12px;
+  border-spacing: 10px;
 }
 
 tr {
   border: 2px solid rgb(201, 194, 202);
   padding: 0.2rem;
+  background-color: #008df570;
 }
 
 tr:nth-child(even) {
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(255, 255, 255);
+}
+
+td {
+  border-radius: 12px;
+  padding: 10px;
+  border: 2px solid rgb(62 112 216);
+  min-width: 4rem;
+  text-align: center;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  font-weight: 600;
 }
 
 form {
@@ -56,25 +89,26 @@ form {
 input,
 button {
   padding: 0.5rem;
-  border: 2px solid rgb(201, 194, 202);
+  border: 2px solid rgb(202, 202, 202);
+  border-radius: 12px;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+form input {
+  min-width: 14rem;
+  font-style: italic;
+  font-size: 16px;
 }
 
 button {
-  background-color: rgb(255, 254, 255);
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
-  transition: 800ms ease-in-out;
-  border-radius: 4px;
   font-style: italic;
   font-weight: 600;
 }
 
-input {
-  outline: none;
-}
-
-h3 {
-  font-size: 2rem;
-  margin-right: 2rem;
+form button {
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -83,13 +117,16 @@ h3 {
   }
 
   table {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
   }
 
   .scores-title {
-    justify-content: center;
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    gap: 5rem;
+    margin-left: 8rem;
   }
 
   .score-input {

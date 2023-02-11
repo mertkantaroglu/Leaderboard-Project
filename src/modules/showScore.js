@@ -10,7 +10,7 @@ export const fetchScore = async () => {
   return getScore.result;
 };
 
-const listContainer = document.querySelector('.names-score-list-container');
+const listContainer = document.querySelector('.score-list');
 
 // Show Scores
 export const showScore = async () => {
