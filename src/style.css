@@ -15,7 +15,7 @@ h1 {
   font-size: 3rem;
   color: rgb(11 125 244);
   text-align: center;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 2px 2px 4px #000;
   font-style: italic;
 }
 
@@ -33,6 +33,14 @@ main {
 .scores-title {
   display: flex;
   gap: 7rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(11 125 244);
+  text-shadow: 1px 2px 2px #000;
+  font-style: italic;
 }
 
 .scores-title h3 {
@@ -63,7 +71,7 @@ td {
   border: 2px solid rgb(62 112 216);
   min-width: 4rem;
   text-align: center;
-  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
   font-style: italic;
   font-weight: 600;
 }
@@ -78,18 +86,18 @@ form {
   gap: 1rem;
 }
 
-form input {
-  min-width: 14rem;
-  font-style: italic;
-  font-size: 16px;
-}
-
 input,
 button {
   padding: 0.5rem;
   border: 2px solid rgb(202, 202, 202);
   border-radius: 12px;
-  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+form input {
+  min-width: 14rem;
+  font-style: italic;
+  font-size: 16px;
 }
 
 button {
@@ -101,14 +109,6 @@ button {
 
 form button {
   margin-bottom: 2rem;
-}
-
-h3 {
-  font-size: 2rem;
-  text-align: center;
-  color: rgb(11 125 244);
-  text-shadow: 1px 2px 2px #000000;
-  font-style: italic;
 }
 
 @media (max-width: 768px) {
